@@ -1,11 +1,11 @@
 [package]
 name = "vanirust"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Federico Miras <fefo@decentraland.org>"]
 edition = "2018"
 
 [dependencies]
+clap = "2.32.0"
+ethkey = { path = "./src/ethkey" }
 rand = "0.6.0"
 hex = "0.3.2"
-ethkey = { path = "./src/ethkey" }
-
