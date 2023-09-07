@@ -7,7 +7,6 @@ authors = ["Parity Technologies <admin@parity.io>"]
 eth-secp256k1 = { git = "https://github.com/paritytech/rust-secp256k1" }
 ethereum-types = "0.4"
 lazy_static = "1.0"
-memzero = { path = "../memzero" }
 rustc-hex = "1.0"
 serde = "1.0"
 serde_derive = "1.0"

@@ -1,6 +1,4 @@
 extern crate ethereum_types;
-extern crate memzero;
-
 extern crate rustc_hex;
 extern crate secp256k1;
 extern crate tiny_keccak;
@@ -23,7 +21,7 @@ pub use ethereum_types::{Address, Public};
 pub type Message = H256;
 
 lazy_static! {
-  pub static ref SECP256K1: secp256k1::Secp256k1 = secp256k1::Secp256k1::new();
+    pub static ref SECP256K1: secp256k1::Secp256k1 = secp256k1::Secp256k1::new();
 }
 
 /// Uninstantiatable error type for infallible generators.
@@ -32,8 +30,8 @@ pub enum Void {}
 
 /// Generates new keypair.
 pub trait Generator {
-  type Error;
+    type Error;
 
-  /// Should be called to generate new keypair.
-  fn generate(&mut self) -> Result<KeyPair, Self::Error>;
+    /// Should be called to generate new keypair.
+    fn generate(&mut self) -> Result<KeyPair, Self::Error>;
 }
