@@ -7,9 +7,7 @@ Create ETH addresses with a custom word 📬
 - Clone the repository and run the following commands:
 
 ```bash
-cargo build
-echo 'export PATH="${PATH}:/path/to/vanirust/target/debug"'
-vanirust --help
+cargo install
 ```
 
 or you can also use it directly:
@@ -26,5 +24,5 @@ vanirust fef0 # Remember that must be hex numbers!
 # Your new ethereum vanity address: 0xfef01755a491d8bf59d9ae5d4e4f691308de4d82
 ```
 
-## Credist
+## Credits
 Both `ethkey` and `memzero` packages that are being used at the source code of this project where extracted from [parity-ethereum](https://github.com/paritytech/parity-ethereum) code.
